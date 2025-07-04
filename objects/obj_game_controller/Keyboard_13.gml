@@ -2,5 +2,7 @@
 // You can write your code in this editor
 
 
-scr2_reel_start();
-
+if(global.can_spinnig == true)
+{
+	scr2_reel_start();
+}

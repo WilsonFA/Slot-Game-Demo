@@ -7,6 +7,7 @@ function scr2_reel_start()
 	{
 		direction = 90;
 		speed = 5
+		global.can_spinnig = false;
 	}
 }
 

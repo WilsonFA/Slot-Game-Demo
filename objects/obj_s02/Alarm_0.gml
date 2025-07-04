@@ -6,16 +6,16 @@ _i_obj++;
 
 if(_i_obj < num_spin)
 {
-	alarm[1] = 5;
+	alarm[1] = 10;
 }
 
 else
 {
-	x = xstart;
 	y = ystart;
 	speed = 5;
-	scr2_reel_spinning_slowly()
+	direction = 270;
 	stopping = true;
+	_i_obj = 0;
 }
 
 

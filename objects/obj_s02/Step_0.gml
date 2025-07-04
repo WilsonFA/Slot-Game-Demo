@@ -1,53 +1,69 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if(x == xstart && y == ystart - 95)
+if(y == ystart - 95)
 {
 	alarm[0] = 1;
 }
 
 
-if(stopping && speed == 5 && x == xstart && y == ystart + 95)
+#region Desaceleração do Reel até a parada.
+if(stopping && stop_stage == 0 && y <= ystart + 95)
 {
-	x = xstart;
+	speed = 8;
 	y = ystart;
-	speed -= 1;
-	stopping = true;
-	show_debug_message("1")
+	stop_stage = 1;
+	show_debug_message("1");
 }
- 
- 
-if(stopping && speed == 4 && x == xstart && y == ystart + 95)
+
+if(stopping && stop_stage == 1 && y >= ystart + 95)
 {
-	x = xstart;
+	speed = 6;
 	y = ystart;
-	speed -= 2;
-	stopping = true;
-	show_debug_message("2")
+	stop_stage = 2;
+	show_debug_message("2");
 }
-/*	
-	else if(speed <= 2 && x == xstart && y == ystart + 95)
-	{
-		x = xstart;
-		y = ystart;
-		move_speed -= 2;
-		stopping = true;
-		show_debug_message("3")
-	}
-	
-	else if (speed <= 0 && x == xstart && y != ystart)
-	{
-		x = xstart;
-		y = ystart;
-		speed = 0;
-		stopping = false;
-	}
-	else if (speed <= 0 && x == xstart && y == ystart)
-	{
-		x = xstart;
-		y = ystart;
-		speed = 0;
-		stopping = false;
-	}
+
+if(stopping && stop_stage == 2 && y >= ystart + 95)
+{
+	speed = 4;
+	y = ystart;
+	stop_stage = 3;
+	show_debug_message("3");
 }
-*/
+
+if(stopping && stop_stage == 3 && y >= ystart + 95)
+{
+	speed = 3;
+	y = ystart;
+	stop_stage = 4;
+	show_debug_message("4");
+}
+
+if(stopping && stop_stage == 4 && y >= ystart + 95)
+{
+	speed = 2;
+	y = ystart;
+	stop_stage = 5;
+	show_debug_message("5");
+}
+
+if(stopping && stop_stage == 5 && y >= ystart + 95)
+{
+	speed = 1;
+	y = ystart;
+	stop_stage = 6;
+	show_debug_message("6");
+}
+
+if(stopping && stop_stage == 6 && y >= ystart + 20)
+{
+	speed = 0;
+	y = ystart;
+	show_debug_message("7");
+	stopping = false;
+	stop_stage = 0;
+	global.can_spinnig = true;
+}
+#endregion
+
