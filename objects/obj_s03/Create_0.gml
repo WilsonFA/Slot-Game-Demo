@@ -3,7 +3,8 @@
 
 //Aqui é para o objeto identificar aqual é o objeto de cima dele para as trocas de sprites.
 last_sprite = sprite_index;
-obj_cima = noone;
+obj_cima = obj_s02;
+
 
 x = xstart;
 y = ystart;
@@ -20,5 +21,6 @@ stop_stage = 0;
 
 //Vai fazer o Reel dar uma gatilhada voltando para posição inicial, ao terminar desacelerando.
 spin_return = false;
+
 
 

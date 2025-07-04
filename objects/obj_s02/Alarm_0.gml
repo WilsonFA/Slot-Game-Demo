@@ -1,19 +1,15 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Verificador de Num. de Loops
 
-scr2_reel_spinning();
+scr_reel_spinning();
 _i_obj++;
 
 if(_i_obj < num_spin)
 {
-	alarm[1] = 10;
+	alarm[1] = 5;
 }
 
 else
 {
-	y = ystart;
-	speed = 5;
-	direction = 270;
 	stopping = true;
 	_i_obj = 0;
 }

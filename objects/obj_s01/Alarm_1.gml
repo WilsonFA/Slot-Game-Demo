@@ -1,20 +1,9 @@
-/// @description Giro em Loop
-/* Aqui você ajusta quantas vezes quer que o REEL gire em looo.
-*/
+/// @description Sistema de Loop do Reel
 
-if(spin_count < spin_num)
-{
-	x = xstart;
-	y = ystart;
-	scr_reel_spinnig()
-	spin_count++;
-	alarm[1] = 20;
-}
-else if (spin_count = spin_num)
-{
-	x = xstart;
-	y = ystart;
-	scr_reel_spinnig()
-	spin_count = 0;
-	alarm[2] = 20;
-}
+
+y = ystart;
+alarm[0] = 1;
+
+sprite_list = array_length(global.spr_symbols);
+idx = irandom(sprite_list - 1);
+sprite_index = global.spr_symbols[idx];

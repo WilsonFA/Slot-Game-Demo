@@ -4,5 +4,5 @@
 
 if(global.can_spinnig == true)
 {
-	scr2_reel_start();
+	scr_reel_start();
 }
