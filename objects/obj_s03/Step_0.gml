@@ -7,14 +7,13 @@ if(y == ystart - 180)
 	alarm[0] = 1;
 }
 
-
-
 #region Desaceleração do Reel até a parada.
 if(stopping && stop_stage == 0 && y <= ystart + 192)
 {
 	speed = 32;
 	y = ystart;
 	stop_stage = 1;
+	scr_change_sprite_array();
 }
 
 if(stopping && stop_stage == 1 && y >= ystart + 192)
@@ -22,6 +21,7 @@ if(stopping && stop_stage == 1 && y >= ystart + 192)
 	speed = 24;
 	y = ystart;
 	stop_stage = 2;
+	scr_change_sprite_array();
 }
 
 if(stopping && stop_stage == 2 && y >= ystart + 192)
@@ -29,6 +29,7 @@ if(stopping && stop_stage == 2 && y >= ystart + 192)
 	speed = 16;
 	y = ystart;
 	stop_stage = 3;
+	scr_change_sprite_array();
 }
 
 if(stopping && stop_stage == 3 && y >= ystart + 192)
@@ -36,6 +37,7 @@ if(stopping && stop_stage == 3 && y >= ystart + 192)
 	speed = 8;
 	y = ystart;
 	stop_stage = 4;
+	scr_change_sprite_array();
 }
 
 if(stopping && stop_stage == 4 && y >= ystart + 192)
@@ -43,6 +45,7 @@ if(stopping && stop_stage == 4 && y >= ystart + 192)
 	speed = 4;
 	y = ystart;
 	stop_stage = 5;
+	scr_change_sprite_array();
 }
 
 if(stopping && stop_stage == 5 && y >= ystart + 192)
@@ -50,6 +53,7 @@ if(stopping && stop_stage == 5 && y >= ystart + 192)
 	speed = 2;
 	y = ystart;
 	stop_stage = 6;
+	scr_change_sprite_array();
 }
 
 if(stopping && stop_stage == 6 && y >= ystart + 60)

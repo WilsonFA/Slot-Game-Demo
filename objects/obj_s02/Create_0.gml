@@ -1,8 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-ystart = y;
+y = ystart;
 speed = 0;
+
 
 
 //Vai ser usado no Alarm 0 para fazer o loop do objeto.

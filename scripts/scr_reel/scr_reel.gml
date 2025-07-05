@@ -41,3 +41,10 @@ function scr_reel_spinning()
 	direction = 270;
 	speed = 48;
 }
+
+function scr_change_sprite_array()
+{
+	var total = array_length(global.spr_symbols);
+	meu_indice = (meu_indice - 1 + total) mod total;
+	sprite_index = global.spr_symbols[meu_indice];
+}
