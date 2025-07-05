@@ -2,59 +2,52 @@
 // You can write your code in this editor
 
 //Isso aqui vai ser chamado logo após o REEL ser acionado
-if(y == ystart - 190)
+if(y == ystart - 180)
 {
-	alarm[0] = true;
+	alarm[0] = 1;
 }
-
 
 #region Desaceleração do Reel até a parada.
-if(stopping && stop_stage == 0 && y <= ystart + 190)
+if(stopping && stop_stage == 0 && y <= ystart + 192)
 {
-	speed = 30;
+	speed = 32;
 	y = ystart;
 	stop_stage = 1;
-	sprite_index = obj_cima.sprite_index;
 }
 
-if(stopping && stop_stage == 1 && y >= ystart + 190)
+if(stopping && stop_stage == 1 && y >= ystart + 192)
 {
-	speed = 15;
+	speed = 24;
 	y = ystart;
 	stop_stage = 2;
-	sprite_index = obj_cima.sprite_index;
 }
 
-if(stopping && stop_stage == 2 && y >= ystart + 190)
+if(stopping && stop_stage == 2 && y >= ystart + 192)
+{
+	speed = 16;
+	y = ystart;
+	stop_stage = 3;
+}
+
+if(stopping && stop_stage == 3 && y >= ystart + 192)
 {
 	speed = 8;
 	y = ystart;
-	stop_stage = 3;
-	sprite_index = obj_cima.sprite_index;
-}
-
-if(stopping && stop_stage == 3 && y >= ystart + 190)
-{
-	speed = 6;
-	y = ystart;
 	stop_stage = 4;
-	sprite_index = obj_cima.sprite_index;
 }
 
-if(stopping && stop_stage == 4 && y >= ystart + 190)
+if(stopping && stop_stage == 4 && y >= ystart + 192)
 {
-	speed = 3;
+	speed = 4;
 	y = ystart;
 	stop_stage = 5;
-	sprite_index = obj_cima.sprite_index;
 }
 
-if(stopping && stop_stage == 5 && y >= ystart + 190)
+if(stopping && stop_stage == 5 && y >= ystart + 192)
 {
-	speed = 1;
+	speed = 2;
 	y = ystart;
 	stop_stage = 6;
-	sprite_index = obj_cima.sprite_index;
 }
 
 if(stopping && stop_stage == 6 && y >= ystart + 60)

@@ -1,13 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-//Aqui é para o objeto identificar aqual é o objeto de cima dele para as trocas de sprites.
-last_sprite = sprite_index;
-obj_cima = obj_s03;
-
-
-x = xstart;
-y = ystart;
+ystart = y;
 speed = 0;
 
 

@@ -3,40 +3,41 @@
 
 function scr_reel_start()
 {	
+	global.can_spinnig = false;
+	
 	with(obj_s01)
 	{
 		direction = 90;
-		speed = 19
-		global.can_spinnig = false;
+		speed = 20;
 	}
 	
 	with(obj_s02)
 	{
 		direction = 90;
-		speed = 19;
+		speed = 20;
 	}
 	
 	with(obj_s03)
 	{
 		direction = 90;
-		speed = 19
+		speed = 20;
 	}
 	
 	with(obj_s04)
 	{
 		direction = 90;
-		speed = 19
+		speed = 20;
 	}
 	
 	with(obj_s05)
 	{
 		direction = 90;
-		speed = 19
+		speed = 20;
 	}
 }
 
 function scr_reel_spinning()
 {
 	direction = 270;
-	speed = 40;
+	speed = 48;
 }

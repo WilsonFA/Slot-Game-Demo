@@ -2,8 +2,6 @@
 // You can write your code in this editor
 
 
-randomize();
-
 global.can_spinnig = true;
 
 global.spr_symbols = [
