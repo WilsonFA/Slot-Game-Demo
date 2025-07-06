@@ -9,7 +9,7 @@ if(y == ystart - 180)
 
 if(y == ystart + 192)
 {
-	show_message("Parou")
+	//show_message("Parou")
 }
 
 #region Desaceleração do Reel até a parada.
