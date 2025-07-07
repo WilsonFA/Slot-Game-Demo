@@ -49,3 +49,6 @@ function scr_change_sprite_array()
 	sprite_index = global.spr_symbols_cln_1[meu_indice];
 }
 
+function scr_layer_scissored() {
+    show_message("Oi")
+}

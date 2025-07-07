@@ -20,7 +20,7 @@ if(stopping && stop_stage == 0 && y <= ystart + 192)
 	stop_stage = 1;
 	show_debug_message("1");
 	scr_change_sprite_array();
-	layer_clear_fx("Symbols");
+	layer_clear_fx("Symbols_Column_1");
 
 }
 

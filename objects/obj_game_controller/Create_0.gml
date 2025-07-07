@@ -12,12 +12,12 @@ global.spr_symbols_cln_1 = [
 	spr_s05,
 	spr_s06,
 	spr_s07,
-	spr_s08,
+	spr_s01,
 	spr_s09,
 	spr_s07,
 	spr_s05,
 	spr_s03,
-	spr_s04,
+	spr_s08,
 	spr_s05,
 	spr_s06,
 	spr_s06,
@@ -30,7 +30,7 @@ global.spr_symbols_cln_1 = [
 	spr_s06,
 	spr_s02,
 	spr_s08,
-	spr_s01
+	spr_s04
 	
 ];
 
