@@ -4,6 +4,9 @@
 y = ystart;
 speed = 0;
 
+//Precisa muudar esse valor em cada objeto para definir qual sprite ele vai começar.
+meu_indice = 3;
+
 //Vai ser usado no Alarm 0 para fazer o loop do objeto.
 num_spin = 10;
 _i_obj = 0;

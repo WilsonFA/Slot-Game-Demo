@@ -3,6 +3,9 @@
 y = ystart;
 speed = 0;
 
+//Precisa muudar esse valor em cada objeto para definir qual sprite ele vai começar.
+meu_indice = 0;
+
 //Vai ser usado para dar um BLUR enquanto o REEL gira bem rápido.
 _fx_blur = fx_create("_filter_linear_blur");
 
