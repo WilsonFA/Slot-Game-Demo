@@ -44,7 +44,8 @@ function scr_reel_spinning()
 
 function scr_change_sprite_array()
 {
-	var total = array_length(global.spr_symbols);
+	var total = array_length(global.spr_symbols_cln_1);
 	meu_indice = (meu_indice - 1 + total) mod total;
-	sprite_index = global.spr_symbols[meu_indice];
+	sprite_index = global.spr_symbols_cln_1[meu_indice];
 }
+

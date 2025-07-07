@@ -20,6 +20,7 @@ if(stopping && stop_stage == 0 && y <= ystart + 192)
 	stop_stage = 1;
 	show_debug_message("1");
 	scr_change_sprite_array();
+	layer_clear_fx("Symbols");
 
 }
 
@@ -91,6 +92,7 @@ if(stopping && stop_stage == 6 && y <= ystart - 5 && spin_return == true)
 	stopping = false;
 	stop_stage = 0;
 	spin_return = false;
+	first_spin = true;
 	global.can_spinnig = true;
 }
 #endregion

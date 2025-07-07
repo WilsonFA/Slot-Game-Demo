@@ -71,6 +71,7 @@ if(stopping && stop_stage == 6 && y <= ystart - 5 && spin_return == true)
 	stopping = false;
 	stop_stage = 0;
 	spin_return = false;
+	first_spin = true;
 	global.can_spinnig = true;
 }
 #endregion

@@ -5,5 +5,5 @@
 //var idx = irandom(total - 1);
 //sprite_index = global.spr_symbols[idx];
 meu_indice = 1; // muda esse valor em cada objeto
-sprite_index = global.spr_symbols[meu_indice];
+sprite_index = global.spr_symbols_cln_1[meu_indice];
 

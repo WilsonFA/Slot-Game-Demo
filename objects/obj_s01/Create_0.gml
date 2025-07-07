@@ -1,14 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
-
-
 y = ystart;
 speed = 0;
 
+//Vai ser usado para dar um BLUR enquanto o REEL gira bem rápido.
+_fx_blur = fx_create("_filter_linear_blur");
 
 //Vai ser usado no Alarm 0 para fazer o loop do objeto.
 num_spin = 10;
 _i_obj = 0;
+first_spin = true;
 
 //Vai ser usado no Step para parar lentamente o Reel.
 stopping = false;
