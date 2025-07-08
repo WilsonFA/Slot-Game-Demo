@@ -15,18 +15,21 @@ function scr_reel_start()
 	{
 		direction = 90;
 		speed = 20;
+		visible = false;
 	}
 	
 	with(obj_s03)
 	{
 		direction = 90;
 		speed = 20;
+		visible = false;
 	}
 	
 	with(obj_s04)
 	{
 		direction = 90;
 		speed = 20;
+		visible = false;
 	}
 	
 	with(obj_s05)

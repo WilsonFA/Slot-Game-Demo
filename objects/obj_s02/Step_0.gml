@@ -69,6 +69,7 @@ if(stopping && stop_stage == 6 && y <= ystart - 5 && spin_return == true)
 {
 	speed = 0;
 	y = ystart;
+	visible = true;
 	stopping = false;
 	stop_stage = 0;
 	spin_return = false;

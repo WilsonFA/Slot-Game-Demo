@@ -10,7 +10,7 @@ meu_indice = 0;
 _fx_blur = fx_create("_filter_linear_blur");
 
 //Vai ser usado no Alarm 0 para fazer o loop do objeto.
-num_spin = 10;
+num_spin = 50;
 _i_obj = 0;
 first_spin = true;
 
@@ -22,3 +22,4 @@ stop_stage = 0;
 spin_return = false;
 
 
+visible = false;

@@ -4,6 +4,11 @@
 
 global.can_spinnig = true;
 
+scissor_x = 49;
+scissor_y = 1189;
+scissor_w = 190;
+scissor_h = 570;
+
 global.spr_symbols_cln_1 = [
 	spr_s01,
 	spr_s02,

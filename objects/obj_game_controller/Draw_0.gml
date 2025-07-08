@@ -1,5 +1,11 @@
-draw_set_color(c_white);
-draw_rectangle(49,1189,239,1759,false);
 
-draw_set_color(c_black);
-draw_rectangle(0,70,250,90,false);
+
+
+var _scissor = gpu_get_scissor();
+gpu_set_scissor(scissor_x,scissor_y,scissor_w,scissor_h);
+with(obj_s01){draw_self();}
+with(obj_s02){draw_self();}
+with(obj_s03){draw_self();}
+with(obj_s04){draw_self();}
+with(obj_s05){draw_self();}
+gpu_set_scissor(_scissor);
