@@ -1,5 +1,5 @@
-
-
+/// @description Mask Cut do REEL
+// Aqui é onde funciona o cut do REEL.
 
 var _scissor = gpu_get_scissor();
 gpu_set_scissor(scissor_x,scissor_y,scissor_w,scissor_h);

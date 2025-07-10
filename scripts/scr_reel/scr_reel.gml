@@ -52,6 +52,9 @@ function scr_change_sprite_array()
 	sprite_index = global.spr_symbols_cln_1[meu_indice];
 }
 
-function scr_layer_scissored() {
-    show_message("Oi")
+function scr_motion_blur()
+{
+	fx_set_parameter(_fx_blur, "g_LinearBlurVector", [0,16]);
+	fx_set_single_layer(_fx_blur, true);
+	layer_set_fx("Symbols_Column_1", _fx_blur);
 }

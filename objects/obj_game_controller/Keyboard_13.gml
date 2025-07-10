@@ -1,6 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
-
+/// @description Botão de Teste
 
 if(global.can_spinnig == true)
 {

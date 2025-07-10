@@ -7,11 +7,6 @@ if(y == ystart - 180)
 	alarm[0] = 1;
 }
 
-if(y == ystart + 192)
-{
-	//show_message("Parou")
-}
-
 #region Desaceleração do Reel até a parada.
 if(stopping && stop_stage == 0 && y <= ystart + 192)
 {
@@ -20,7 +15,10 @@ if(stopping && stop_stage == 0 && y <= ystart + 192)
 	stop_stage = 1;
 	show_debug_message("1");
 	scr_change_sprite_array();
-	layer_clear_fx("Symbols_Column_1");
+	#region BLUR: Não está funcionando junto com o SCISSOR ainda...
+	//Desativa o BLUR do giro
+	/*layer_clear_fx("Symbols_Column_1");*/
+	#endregion
 
 }
 

@@ -6,8 +6,10 @@ speed = 0;
 //Precisa muudar esse valor em cada objeto para definir qual sprite ele vai começar.
 meu_indice = 0;
 
+#region BLUR: Não está funcionando junto com o SCISSOR ainda...
 //Vai ser usado para dar um BLUR enquanto o REEL gira bem rápido.
-_fx_blur = fx_create("_filter_linear_blur");
+/*_fx_blur = fx_create("_filter_linear_blur");*/
+#endregion
 
 //Vai ser usado no Alarm 0 para fazer o loop do objeto.
 num_spin = 50;

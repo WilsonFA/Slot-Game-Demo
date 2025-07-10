@@ -1,6 +1,5 @@
-/// @description Insert description here
-// You can write your code in this editor
-
+/// @description Variávei Globais do JOGO.
+// Aqui se encontra as variáveis globais do JOGO.
 
 global.can_spinnig = true;
 
