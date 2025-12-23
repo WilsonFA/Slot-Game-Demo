@@ -11,8 +11,8 @@
   "name":"obj_btn_play",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"bar",
+    "path":"folders/Objects/bar.yy",
   },
   "parentObjectId":null,
   "persistent":false,

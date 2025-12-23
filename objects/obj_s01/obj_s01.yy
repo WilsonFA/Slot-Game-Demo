@@ -12,8 +12,8 @@
   "name":"obj_s01",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"symbols",
+    "path":"folders/Objects/symbols.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,7 +30,7 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"num_spin","filters":[],"listItems":[],"multiselect":false,"name":"num_spin","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"50","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"num_spin","filters":[],"listItems":[],"multiselect":false,"name":"num_spin","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"50","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

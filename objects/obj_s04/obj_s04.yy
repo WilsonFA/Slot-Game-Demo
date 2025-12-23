@@ -12,8 +12,8 @@
   "name":"obj_s04",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"symbols",
+    "path":"folders/Objects/symbols.yy",
   },
   "parentObjectId":null,
   "persistent":false,
