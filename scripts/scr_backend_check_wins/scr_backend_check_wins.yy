@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_backend_check_wins",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_backend_check_wins",
+  "parent":{
+    "name":"backend",
+    "path":"folders/Scripts/backend.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
