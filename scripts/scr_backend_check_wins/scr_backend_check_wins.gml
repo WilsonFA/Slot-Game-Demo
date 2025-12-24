@@ -10,13 +10,13 @@ function backend_check_wins(reels){
 		var first_symbol = reels[0][line[0]];
 		var count = 1;
 		
-		for (var r =1; r < global.REEL_COUNT; r++){
+		for (var r = 1; r < global.REEL_COUNT; r++){
 		
 			var current = reels[r][line[r]];
 			
-			if (current == first_symbol) || current == global.ROW_COUNT{
+			if (current == first_symbol || current == global.SYM_WILD){
 				count++;
-			} else{
+			} else {
 				break;
 			}
 		}
