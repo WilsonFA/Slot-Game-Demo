@@ -1,6 +1,7 @@
 {
   "FolderOrderSettings":[
     {"name":"bar","order":16,"path":"folders/Objects/bar.yy",},
+    {"name":"core__game","order":17,"path":"folders/Objects/core__game.yy",},
     {"name":"symbols","order":15,"path":"folders/Objects/symbols.yy",},
     {"name":"backend","order":3,"path":"folders/Scripts/backend.yy",},
     {"name":"bar","order":3,"path":"folders/Sprites/bar.yy",},
