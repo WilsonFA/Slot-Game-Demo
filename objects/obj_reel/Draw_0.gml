@@ -6,12 +6,28 @@ for (var row = 0; row < global.ROW_COUNT; row++){
 	
 	var sym;
 	
-	if (is_spinning) {
-		// símbolo aleatório fake durante giro
-		sym = irandom(6) + 1;
-	} else {
-		sym = symbols[row];
+	
+	if(reel_state == "SPINNING"){
+		
+		sym = irandom(6) +1;
+		
 	}
+	else if(reel_state == "SLOWING"){
+		if (current_speed < 10 && array_length(target_symbols) > 0) {
+			sym = target_symbols[row];
+		} else {
+			sym = irandom(6) + 1;
+		}
+	}
+	
+	else { // SNAP ou STOPPED
+		if (array_length(target_symbols) > 0) {
+		 sym = target_symbols[row];
+		} else {
+		   sym = ""; // ou um placeholder como "-"
+		}
+}
+
 	
 	var draw_x = x;
 	var draw_y = y + row * symbol_size + spin_offset;

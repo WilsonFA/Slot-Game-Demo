@@ -1,16 +1,21 @@
-switch (game_state) {
+//Parada em cascata
+if(stopping_reels){
 	
-	case GAME_STATE.IDLE:
-	// esperando input
-	break;
+	stop_timer++;
 	
-	case GAME_STATE.SPINNING:
-	// aqui depois os reels vão avisar quando terminar
-	// por enquanto, vamos pular direto pro resultado
-	break;
-	
-	case GAME_STATE.SHOW_RESULT:
-	// aqui depois mostraremos wins
-	// por enquanto, só volta pro idle
-	break;
+	if(stop_timer >= stop_delay){
+		
+		stop_timer = 0;
+		
+		var reel = reels_visual[stop_index];
+		
+		reel.reel_state = "SLOWING";
+		
+		stop_index++;
+		
+		if(stop_index >= array_length(reels_visual)){
+		stopping_reels = false;
+		game_state = GAME_STATE.IDLE;
+		}
+	}
 }
