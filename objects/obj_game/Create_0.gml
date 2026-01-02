@@ -24,11 +24,26 @@ function start_spin() {
 	
 	// Entrega resultado para os reels visuais
 	for (var i = 0; i < 5; i++) {
-		reels_visual[i].symbols = last_spin_result.reels[i];
+		var reel = reels_visual[i];
+		reel.target_symbols = last_spin_result.reels[i];
+		reel.is_spinning = true;
 	}
 	
 	// Muda estado
 	game_state = GAME_STATE.SPINNING;
+}
+
+function stop_reels(){
+	
+	for (var i = 0; i <5; i++){
+		var reel = reels_visual[i];
+		reel.is_spinning = false;
+		reel.symbols = reel.target_symbols;
+		reel.spin_offset = 0;
+	}
+	
+	// Muda estado	
+	game_state = GAME_STATE.IDLE;
 }
 
 #endregion
@@ -37,9 +52,9 @@ function start_spin() {
 
 reels_visual = [];
 
-var start_x = 200;
-var start_y = 150;
-var spacing = 110;
+var start_x = 48;
+var start_y = 1188;
+var spacing = 200;
 
 for (var i = 0; i < 5; i++){
 	

@@ -1,11 +1,20 @@
 /// Draw - obj_reel
 
-for (var row = 0; row < array_length(symbols); row++){
+gpu_set_scissor(x, y, symbol_size, symbol_size * global.ROW_COUNT);
+
+for (var row = 0; row < global.ROW_COUNT; row++){
 	
-	var sym = symbols[row];
+	var sym;
+	
+	if (is_spinning) {
+		// símbolo aleatório fake durante giro
+		sym = irandom(6) + 1;
+	} else {
+		sym = symbols[row];
+	}
 	
 	var draw_x = x;
-	var draw_y = y + row * symbol_size;
+	var draw_y = y + row * symbol_size + spin_offset;
 	
 	// Retângulo placeholder
 	draw_set_colour(c_white);
@@ -13,5 +22,7 @@ for (var row = 0; row < array_length(symbols); row++){
 	
 	// Texto do símbolo
 	draw_set_colour(c_black);
-	draw_text(draw_x + 10, draw_y + 10, sym);
+	draw_text(draw_x + 85, draw_y + 85, string(sym));
 }
+
+gpu_set_scissor(0,0,display_get_width(),display_get_height());
