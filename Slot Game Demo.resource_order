@@ -1,7 +1,7 @@
 {
   "FolderOrderSettings":[
     {"name":"bar","order":16,"path":"folders/Objects/bar.yy",},
-    {"name":"core__game","order":17,"path":"folders/Objects/core__game.yy",},
+    {"name":"core_game","order":17,"path":"folders/Objects/core_game.yy",},
     {"name":"symbols","order":15,"path":"folders/Objects/symbols.yy",},
     {"name":"backend","order":3,"path":"folders/Scripts/backend.yy",},
     {"name":"bar","order":3,"path":"folders/Sprites/bar.yy",},
@@ -16,6 +16,7 @@
     {"name":"obj_btn_sound","order":6,"path":"objects/obj_btn_sound/obj_btn_sound.yy",},
     {"name":"obj_game_controller","order":5,"path":"objects/obj_game_controller/obj_game_controller.yy",},
     {"name":"obj_price_bar","order":7,"path":"objects/obj_price_bar/obj_price_bar.yy",},
+    {"name":"obj_reel","order":18,"path":"objects/obj_reel/obj_reel.yy",},
     {"name":"obj_s02","order":1,"path":"objects/obj_s02/obj_s02.yy",},
     {"name":"obj_s03","order":2,"path":"objects/obj_s03/obj_s03.yy",},
     {"name":"obj_s04","order":3,"path":"objects/obj_s04/obj_s04.yy",},
