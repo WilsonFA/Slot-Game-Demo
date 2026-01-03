@@ -13,7 +13,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"symbols",
-    "path":"folders/Objects/symbols.yy",
+    "path":"folders/Objects/old_test/symbols.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_s05",
-    "path":"sprites/spr_s05/spr_s05.yy",
+    "name":"spr_s05_old",
+    "path":"sprites/spr_s05_old/spr_s05_old.yy",
   },
   "spriteMaskId":null,
   "visible":true,

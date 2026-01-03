@@ -3,7 +3,15 @@
 	
 // Number of rows and reels
 global.REEL_COUNT = 5;
+
+// Linhas visíveis
 global.ROW_COUNT = 3;
+
+// Linhas reais do reel (buffer)
+global.REEL_ROWS_REAL = 5;
+// REEL_ROWS_REAL inclui buffer acima e abaixo para evitar buracos visuais
+
+
 	
 //Symbols IDs
 global.SYM_S01 = 1;

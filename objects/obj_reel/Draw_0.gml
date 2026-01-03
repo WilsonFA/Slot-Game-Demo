@@ -1,44 +1,26 @@
-/// Draw - obj_reel
+/// Draw Event - obj_reel
+/// ------------------------------------------------------------
+/// Renderiza apenas a área visível do reel.
+/// ------------------------------------------------------------
 
 gpu_set_scissor(x, y, symbol_size, symbol_size * global.ROW_COUNT);
 
-for (var row = 0; row < global.ROW_COUNT; row++){
-	
-	var sym;
-	
-	
-	if(reel_state == "SPINNING"){
-		
-		sym = irandom(6) +1;
-		
-	}
-	else if(reel_state == "SLOWING"){
-		if (current_speed < 10 && array_length(target_symbols) > 0) {
-			sym = target_symbols[row];
-		} else {
-			sym = irandom(6) + 1;
-		}
-	}
-	
-	else { // SNAP ou STOPPED
-		if (array_length(target_symbols) > 0) {
-		 sym = target_symbols[row];
-		} else {
-		   sym = ""; // ou um placeholder como "-"
-		}
-}
+// Desenha o strip real (buffer + visíveis + buffer)
+for (var row = 0; row < global.REEL_ROWS_REAL; row++) {
 
-	
+	var sym = symbols[row];
+
 	var draw_x = x;
-	var draw_y = y + row * symbol_size + spin_offset;
-	
-	// Retângulo placeholder
-	draw_set_colour(c_white);
-	draw_rectangle(draw_x, draw_y, draw_x + symbol_size, draw_y + symbol_size, false);
-	
-	// Texto do símbolo
-	draw_set_colour(c_black);
-	draw_text(draw_x + 85, draw_y + 85, string(sym));
+	var draw_y = y + (row - 1) * symbol_size - spin_offset;
+
+	// desenha somente dentro da área visível
+	if (draw_y > y - symbol_size && draw_y < y + symbol_size * global.ROW_COUNT) {
+
+		var spr = get_symbol_sprite(sym);
+		if (spr != noone) {
+			draw_sprite(spr, 0, draw_x, draw_y);
+		}
+	}
 }
 
-gpu_set_scissor(0,0,display_get_width(),display_get_height());
+gpu_set_scissor(0, 0, display_get_width(), display_get_height());

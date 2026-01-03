@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_reel",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"old_test",
+    "path":"folders/Scripts/old_test.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
