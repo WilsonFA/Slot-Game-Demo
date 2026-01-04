@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_get_symbol_sprite",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"frontend",
+    "path":"folders/Scripts/frontend.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
